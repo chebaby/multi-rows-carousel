@@ -1,0 +1,45 @@
+.gallery {
+	max-width: 100%;
+}
+
+.gallery .gallery__row {
+	margin-bottom: 10px;
+}
+
+.gallery .gallery__row .item {
+	position: relative;
+	width: 350px;
+	height: 200px;
+	margin: 5px;
+	cursor: pointer;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.gallery .gallery__row .item:first-child,
+.gallery .gallery__row .item:last-child {
+	margin: 0;
+}
+
+.gallery .gallery__row .item .thumb {
+	height: 100%;
+	width: 100%;
+}
+
+.gallery .gallery__row .item .thumb img {
+	height: 100%;
+}
+
+.gallery .gallery__row .item .thumb i {
+	display: block;
+	position: absolute;
+	top: 35%;
+	left: 40%;
+	color: #fff;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.gallery .gallery__row .item:hover i {
+	opacity: 1;
+}
